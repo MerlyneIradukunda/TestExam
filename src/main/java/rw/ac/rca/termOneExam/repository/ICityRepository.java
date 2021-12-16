@@ -9,5 +9,5 @@ import rw.ac.rca.termOneExam.domain.City;
 public interface ICityRepository extends JpaRepository<City, Long> {
 
 	boolean existsByName(String name);
-
+    City findByName(String name);
 }
